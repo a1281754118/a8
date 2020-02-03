@@ -1,0 +1,92 @@
+
+<view class="approvalresult-view">
+  <view class="approvalresult-view-1" bindtap="jieguo" data-id="{{purchaseapproval.purchasePlanId}}">
+  <text>审批结果 :</text>
+  <view class="approvalresult-view-1-view1">{{purchaseapproval.applyforStateName}}</view>
+  <image class="approvalresult-img" src="../../../img/youjiantou.png"></image>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>审批流程 :</text>
+  <text class="approvalresult-view-1-text1">{{purchaseapproval.approvalProcessName}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text style="margin-left:30rpx">申请人 :</text>
+  <text class="approvalresult-view-1-text1">{{purchaseapproval.firstApprove}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>申请部门 :</text>
+  <text class="approvalresult-view-1-text1">{{purchaseapproval.applicantDept}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>申请时间 :</text>
+  <text class="approvalresult-view-1-text1">{{purchaseapproval.fillDate}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <h1>采购计划</h1>
+  </view>
+
+
+
+
+</view>
+ <view wx:if="{{purchaseapproval.purchasePlanInquirySet!=''&&currentTab!='1'&&purchaseapproval.purchasePlanInquirySet[0].materialName}}" class="approvalresult-view3" >
+  <view class="approvalresult-view3-1">
+  <text>材料名称: {{purchaseapproval.purchasePlanInquirySet[0].materialName}}</text>
+  <text style="border-right: 0rpx ">配件规格: {{purchaseapproval.purchasePlanInquirySet[0].specific}}</text>
+  </view>
+  <view class="approvalresult-view3-1">
+  <text>单位: {{purchaseapproval.purchasePlanInquirySet[0].unit}}</text>
+  <text style="border-right: 0rpx ">询问价格: {{purchaseapproval.purchasePlanInquirySet[0].inquiryPrice}}</text>
+  </view>
+  <view class="approvalresult-view3-1">
+  <text>数量: {{purchaseapproval.purchasePlanInquirySet[0].quantity}}</text>
+  <text style="border-right: 0rpx ">审批数量: {{purchaseapproval.purchasePlanInquirySet[0].approvalQuantity}}</text>
+  </view>
+  <view>
+  </view>
+  <view class="approvalresult-view3-2">
+  限购日期: {{purchaseapproval.purchasePlanInquirySet[0].purchaseDate}}
+  </view>
+  <view class="approvalresult-view3-2">
+  小计费用: {{purchaseapproval.purchasePlanInquirySet[0].summary}}
+  </view>
+  </view>
+
+  <view>
+
+
+  <view wx:if="{{currentTab=='1'}}" class="approvalresult-view3" >
+  审批人签名
+  <view class="approvalresult-view3-3">
+   <view class="handBtn">
+    <!-- <button catchtap="retDraw" class="delBtn">重写</button>
+    <button catchtap="subCanvas" class="subBtn">完成</button>  -->
+  </view>
+  <view class="handCenter">
+    <canvas class="handWriting" disable-scroll="true" bindtouchstart="uploadScaleStart" bindtouchmove="uploadScaleMove"
+      bindtouchend="uploadScaleEnd" bindtap="mouseDown" canvas-id="handWriting">
+    </canvas>
+  </view>
+  <view>
+  <button style="margin-top:10rpx;" catchtap="retDraw">清除</button>
+  </view>
+  </view>
+  <view class="approvalresult-view3-2">
+  审批人: {{username}}
+  </view>
+  <view class="approvalresult-view3-2">
+  审批日期: {{purchaseapproval.inquiryDate}}
+  </view>
+ 
+  
+  </view>
+   
+  </view>
+  
+
+<view wx:if="{{currentTab=='1'}}" class="approvalresult-view2">
+<text>审批意见:</text>
+ <view class="approvalresult-view2-1"><textarea placeholder="请输入意见" style="width:100%;height:120rpx;"
+  value="{{value1}}" bindinput="value1"></textarea></view>
+ <button style="background:#5BC494;margin-top:20rpx;color:#fff" bindtap="uploadCanvasImg">审批</button>
+</view>

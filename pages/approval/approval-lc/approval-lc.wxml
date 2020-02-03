@@ -1,0 +1,39 @@
+<view wx:if="{{arr.result[0]}}" class="lc-view">
+  <view >{{arr.purchasePlan.approvalProcessName}}</view>
+  <view class="lc-view-1" style="color:#19D2AF;"> {{arr.purchasePlan.applyforStateName}}：
+  <text>{{arr.purchasePlan.firstApprove}} </text>
+  
+  </view>
+  <view class="lc-data">{{arr.result[0].acceptTime}}</view>
+  <image src="{{img1}}"></image>
+  
+  <view class="lc-view-1">备注： <text>{{arr.result[0].acceptRemark}}</text></view>
+  
+</view>
+
+<view wx:if="{{arr.result[1]}}" class="lc-view">
+  <view >{{arr.purchasePlan.approvalProcessName}}</view>
+  <view class="lc-view-1" style="color:#19D2AF;"> {{arr.purchasePlan.applyforStateName}}：
+  <text>{{arr.purchasePlan.secondApprove}} </text>
+  
+  </view>
+  <view class="lc-data">{{arr.result[1].acceptTime}}</view>
+  <image src="{{img2}}"></image>
+  
+  <view class="lc-view-1">备注： <text>{{arr.result[1].acceptRemark}}</text></view>
+  
+</view>
+
+<view wx:if="{{arr.result[2]}}" class="lc-view">
+  <view >{{arr.purchasePlan.approvalProcessName}}</view>
+  <view class="lc-view-1" style="color:#19D2AF;"> {{arr.purchasePlan.applyforStateName}}：
+  <text>{{arr.purchasePlan.thirdApprove}} </text>
+  
+  </view>
+  <view class="lc-data">{{arr.result[2].acceptTime}}</view>
+  <image src="{{img3}}"></image>
+  
+  <view class="lc-view-1">备注： <text>{{arr.result[2].acceptRemark}}</text></view>
+  
+</view>
+<view style="text-align: center;padding: 20rpx;" wx-if="{{value1!=''}}">---{{value1}}---</view>

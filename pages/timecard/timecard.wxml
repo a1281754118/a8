@@ -1,0 +1,56 @@
+<view class="specificdate">{{specificdate}}</view>
+
+<view class="collectiveView" wx:if="{{work==''}}">
+  上班
+  <text wx:if="{{signin==true}}">{{time}}</text>
+  <view wx:if="{{signin==true}}" bindtap="signin">签到</view>
+</view>
+
+<view class="collectiveView" wx:if="{{work!=''}}">
+  上班
+  <text  style="color:#53C395">{{work.time}}</text>
+  <text >{{work.name}}</text>
+</view>
+
+<view class="collectiveView" wx:if="{{offwork==''}}">
+  下班
+  <text wx:if="{{signin==false}}">{{time}}</text>
+  <!-- <text wx:if="{{signin=='none'}}" style="color:red">{{signback}}</text>
+   <text wx:if="{{signin=='none'}}" >{{address.name}}</text> -->
+  <view wx:if="{{signin==false}}" bindtap="signback">签退</view>
+</view>
+<view class="collectiveView" wx:if="{{offwork!=''}}">
+  下班
+  
+  <text style="color:red">{{offwork.time}}</text>
+   <text  >{{offwork.name}}</text>
+  
+</view>
+
+<view class="collectiveView">
+  备注
+  <input placeholder="请输入备注" bindinput="remarksvalue" value="{{remarksvalue ? remarksvalue:''}}"></input>
+  <view  bindtap="remarks" style="background:#5999D2">提交</view>
+</view>
+
+<view class="collectiveView">
+  位置
+  <view  bindtap="report">上报位置</view>
+  <text wx:for="{{positionarr}}" class="upposition">{{item.time}} <text>{{item.position}}</text></text>
+</view>
+
+<view class="upimg">
+  <view class="weui-uploader">
+    <view class="img-v weui-uploader__bd" style="width: 100%;margin: 0 auto;">
+      <view class='pic' wx:for="{{imgarr}}" wx:for-item="item" wx:key="*this" 
+      style="float:left;width:23%;margin-top:10rpx;margin-left:10rpx;">
+        <image style="margin:0 auto;" class='weui-uploader__img ' 
+        src="{{item.img}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+          <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+      </view>
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"
+       style="margin-top:10rpx;margin-left:10rpx"> </view>
+    </view>
+  </view>
+</view>

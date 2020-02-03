@@ -1,0 +1,118 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.1",
+	"appid": "wxc4c720bd8aaaec21",
+	"projectname": "a8%E7%A7%9F%E8%B5%81%E9%80%9A",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "主页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "考勤",
+					"pathName": "pages/timecard/timecard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "审批",
+					"pathName": "pages/approval/approval",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "采购审批",
+					"pathName": "pages/approval/purchase-approval/purchase-approval",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "审批结果",
+					"pathName": "pages/approval/approvalresult/approvalresult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增审批",
+					"pathName": "pages/approval/add-approval/add-approval",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户列表",
+					"pathName": "pages/approval/add-approval/CClist/CClist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "安全巡检",
+					"pathName": "pages/inspection/inspection",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

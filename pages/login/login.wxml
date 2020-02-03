@@ -1,0 +1,34 @@
+<view class="index-boby">
+<image class="logo" src="../img/bj.jpg" mode="scaleToFill"></image>
+  <view class="login-window">
+        <view class='search-login'>
+        <view class='searchItem-login'>
+          <image src='/pages/img/icon-.png' />
+          <input placeholder-class="place-holder" placeholder='账号' hold-keyboard='true' 
+          bindblur='hide' bindfocus='display' maxlength="20" bindinput='mobile' value='{{mobile}}'></input>
+          <image style='display: {{display}}; height: 35rpx;width: 35rpx;' src='/pages/img/cuowu1.png' bindtap='delt'></image>
+        </view>
+      </view>
+      <view class='search-login' style="margin-bottom: 20rpx;margin-top: -2rpx;">
+        <view class='searchItem-login'>
+          <image src='/pages/img/mima.png' />
+          <input placeholder-class="place-holder" placeholder='密码' hold-keyboard='true' 
+          password maxlength="30" bindinput='password'  value="{{password}}"></input>
+        </view>
+      </view>
+
+
+<view style="width:95%;margin:0 auto">
+  <view class="login" bindtap="login">登录</view>
+  <view class="login-1">
+  <view style="margin-right:4%">注册</view>      
+  <view>忘记密码?</view>         
+  </view>
+  <view class="slogan">最专业的建机一站式管理服务平台</view>
+</view>
+
+
+  </view>
+
+
+</view>

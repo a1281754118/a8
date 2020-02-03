@@ -1,0 +1,52 @@
+<block wx:if="{{opid=='2'}}">
+  <view class=" search">
+    <view style='margin-top: 10rpx;'>
+      <view class='searchItem'>
+        <image src='/pages/img/weibiaoti-.png' />
+        <input type='text' placeholder='输入用户名/所属部门' bindinput='input' value='{{adTitle}}' bindconfirm='search'></input>
+        <image style='display: {{display}}; height: 35rpx;width: 35rpx;' src='/pages/img/cuowu1.png' bindtap='delt'></image>
+      </view>
+    </view>
+  </view>
+
+  <view style="margin-top:70rpx;">
+    <checkbox-group bindchange="checkboxChange" style="padding:10rpx;">
+<checkbox value="{{item.USERID}}" class="selectionbox" wx:for="{{arr}}" style="margin-top:10rpx">
+<view>姓名： <text>{{item.USERNAME}}</text> </view>
+<view>部门： <text>{{item.DEPNAME}}</text> </view>
+</checkbox>
+
+</checkbox-group>
+  
+  </view>
+
+  <view wx:if="{{display1=='block'}}" class='bottom' bindtap='camera'>
+    <text>确认</text>
+  </view>
+</block>
+
+<block wx:if="{{opid=='1'}}">
+  <view class=" search">
+    <view style='margin-top: 10rpx;'>
+      <view class='searchItem'>
+        <image src='/pages/img/weibiaoti-.png' />
+        <input type='text' placeholder='输入用户名/所属部门' bindinput='input' value='{{adTitle}}' bindconfirm='search'></input>
+        <image style='display: {{display}}; height: 35rpx;width: 35rpx;' src='/pages/img/cuowu1.png' bindtap='delt'></image>
+      </view>
+    </view>
+  </view>
+
+  <view style="margin-top:70rpx;">
+<view value="{{item.USERID}}" class="selectionbox" wx:for="{{arr1}}" style="margin-top:10rpx" data-arr="{{item}}" bindtap="camera">
+<view>姓名： <text>{{item.USERNAME}}</text> </view>
+<view>部门： <text>{{item.DEPNAME}}</text> </view>
+</view>
+
+
+  
+  </view>
+
+  <view wx:if="{{display1=='block'&&opid=='2'}}" class='bottom' bindtap='camera'>
+    <text>确认</text>
+  </view>
+</block>

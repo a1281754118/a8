@@ -1,0 +1,352 @@
+/**app.wxss**/
+@import './weui/weui.wxss';
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.body{
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  
+}
+page{
+  background: #F9F8F6;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+/* //标签统一样式 */
+.collectiveView{
+  position: relative;
+  margin-top: 20rpx;
+  width: 100%;
+  /* height: 90rpx; */
+  background: #fff;
+  font-size: 30rpx;
+  overflow: hidden;
+  line-height: 90rpx;
+  padding-left: 20rpx;
+  padding-right: 40rpx;
+}
+.collectiveView text{
+  margin-left: 10rpx;
+}
+.collectiveView view{
+  float: right;
+  background: #5BC494;
+  color: #fff;
+  height: 70rpx;
+  margin-top: 10rpx;
+  line-height: 70rpx;
+  width: 150rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  margin-right: 50rpx;
+}
+.collectiveView input{
+  position: absolute;
+  height: 60rpx;
+  left: 110rpx;
+  top: 15rpx;
+}
+/* //选项卡 */
+swiper{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.swiper-tab{
+    width: 100%;
+    border-bottom: 1rpx solid #eee;
+    text-align: center;
+    height: 90rpx;
+    line-height: 90rpx;
+    display: flex;
+    flex-flow: row;
+    font-size: 28rpx;
+    justify-content: space-between;
+    position: fixed;
+    background: #fff;
+    z-index: 999
+}
+.swiper-tab-item{
+    width: 50%; 
+    color:#434343;
+}
+.active{
+  color:#C47126;
+  border-bottom: 2rpx solid #F65959;
+}
+.ycy{
+  margin-top: 100rpx;
+  font-size: 30rpx;
+  height: 100%;
+  /* display: flex; */
+  border-bottom: 1px solid #eee;
+  /* position: relative;
+  overflow-y: auto */
+}
+/* 右下角固定的botton */
+.fixed-botton{
+  position: fixed;
+  bottom: 30rpx;
+  right: 30rpx;
+  background: #FE8103;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 150rpx;
+  color: #fff;
+  font-size: 25rpx;
+  text-align: center;
+}
+.fixed-botton image{
+  width: 50rpx;
+  height: 50rpx;
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  margin: 0 auto;
+  display: block;
+}
+/* //列表公用 */
+.communal-list{
+  font-size: 26rpx;
+  width: 96%;
+  margin: 20rpx 0rpx 0rpx 2%;
+  border-radius: 10rpx;
+  height: 170rpx;
+  background: #fff;
+  /* overflow: hidden; */
+}
+.communal-list-text1{
+  background: #19D2AF;
+  width: 100rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+ 
+}
+.communal-list-1{
+  width: 90%;
+  padding: 20rpx;
+  margin: 0 auto;
+  border-bottom: 1rpx #F9F8F6 solid;
+}
+.communal-list-2{
+  width: 90%;
+  padding: 20rpx;
+  margin: 0 auto;
+}
+.communal-list-text2{
+  /* display: inline-block; */
+  color: rgb(170, 170, 170);
+  overflow: hidden;
+  height: 40rpx;
+  display: inline-block;
+}
+.communal-list-text4{
+  float: right;
+  display: block;
+  color: #19D2AF;
+}
+/* 选择列表 */
+.selectionlist{
+  position: relative;
+  margin-top: 15rpx;
+  height: 50rpx;
+  padding: 20rpx;
+  background: #fff;
+  font-size: 30rpx;
+  overflow: hidden;
+  line-height: 50rpx;
+  color: rgb(85, 85, 85)
+}
+.selectionlist text{
+  float: right;
+  color: rgb(139, 139, 139);
+  margin-right: 15rpx;
+  overflow: hidden;
+}
+.selectionlist-img1{
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 12rpx;
+  
+}
+.selectionlist input{
+  width: 65%;
+  margin-left: 30rpx;
+  border: 1rpx rgb(241, 241, 241) solid;
+  padding: 10rpx;
+  display: inline-block;
+  height: 30rpx;
+  margin-top: -5rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+.selectionlist-img2{
+  float: right;
+  width: 50rpx;
+  height: 50rpx;
+}
+.description-list{
+  background: #fff;
+  margin-top: 10rpx;
+  padding: 20rpx;
+}
+.description-list view{
+  width: 100%;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx rgb(241, 241, 241) solid;
+}
+.description-list textarea{
+  margin-top: 10rpx;
+  padding: 10rpx;
+  width: 100%;
+  height: 200rpx;
+}
+/* //上传照片 */
+.upimg{
+  background: #fff;
+  margin-top: 10rpx;
+}
+.selectionlist-botton{
+  width: 90%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background: #FDAE07;
+  color: #fff;
+  font-size: 30rpx;
+}
+/* 滚动选择 */
+.rollselection{
+   /* border-bottom: 1rpx rgb(241, 241, 241) solid; */
+  padding: 5rpx;
+  color: rgb(139, 139, 139);
+  margin-left: 30rpx;
+  display: inline-block;
+  font-size: 28rpx;
+  width: 65%;
+  
+}
+.picker{
+  display: block;
+  position: absolute;
+  right: 60rpx;
+  width: 500rpx;
+}
+/* ///搜索 */
+view.search {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40rpx;
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  top: 0;
+  background: #F9F8F6;
+  z-index: 998
+}
+
+view.searchItem {
+  display: flex;
+  width: 95%;
+  height: 60rpx;
+  background: #fff;
+  flex-direction: row;
+  border-radius: 40rpx;
+  margin: 0 auto;
+  border: 1rpx rgb(233, 230, 230) solid;
+}
+
+view.searchItem image {
+  height: 42rpx;
+  width: 42rpx;
+  align-self: center;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+
+view.searchItem input {
+  flex: 1;
+  font-size: 25rpx;
+  height: 60rpx;
+}
+/* 选择框 */
+.selectionbox{
+  background: #fff;
+  width: 100%;
+  height: 100rpx;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+.selectionbox view{
+  margin-left: 10rpx;
+}
+.selectionbox view text{
+  color: rgb(122, 122, 122);
+  font-size: 25rpx;
+}
+/* //圆形按钮 */
+.bottom {
+  position: fixed;
+  width: 150rpx;
+  height: 150rpx;
+  background: #FE6617;
+  color: #fff;
+  bottom: 30rpx;
+  right: 20rpx;
+  border-radius: 120rpx;
+  line-height: 150rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+swiper{
+  overflow: auto;
+}
+swiper-item {
+
+overflow: visible;
+
+
+}
+/* //审批流程 */
+.lc-view{
+  position: relative;
+  background: #fff;
+  padding: 20rpx;
+  float: 26rpx;
+  overflow: hidden;
+}
+.lc-view image{
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  top: -1rpx;
+  left: 300rpx;
+  
+}
+.lc-view-1{
+  width: 300rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  overflow: hidden;
+}
+.lc-data{
+  float: right;
+  font-size: 22rpx;
+}

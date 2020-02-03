@@ -1,0 +1,186 @@
+.approvalresult-view{
+  width: 100%;
+  /* margin-top: 50rpx; */
+  background: #fff;
+  /* height: 100%; */
+  font-size: 30rpx;
+  color: rgb(112, 112, 112)
+}
+.approvalresult-view-1{
+  width: 90%;
+  padding: 20rpx;
+  padding-left: 0rpx;
+  margin: 0 auto;
+  height: 45rpx;
+  line-height: 45rpx;
+  border-bottom: 1rpx #F9F8F6 solid;
+  overflow: hidden;
+}
+.approvalresult-view-1-text1{
+  margin-left: 30rpx;
+  font-size: 26rpx;
+}
+.approvalresult-view-1-view1{
+  display: inline-block;
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 30rpx;
+  background: #16D3B2;
+  color: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+.approvalresult-img{
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  margin-top: 10rpx;
+}
+.approvalresult-view2{
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+.approvalresult-view2-1{
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 10rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+
+}
+.approvalresult-view-1 h1{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: #000;
+}
+.approvalresult-view3{
+  background: #fff;
+  padding: 20rpx;
+  padding-bottom: 0rpx;
+  margin-top:10rpx;
+  color: rgb(112, 112, 112)
+}
+.approvalresult-view3-1 text{
+  display: inline-block;
+  width: 48%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-right: 1rpx rgb(238, 238, 238) solid;
+  border-bottom: 1rpx rgb(238, 238, 238) solid;
+  padding-left: 10rpx;
+  overflow: hidden;
+}
+.approvalresult-view3-2{
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx rgb(238, 238, 238) solid;
+}
+
+
+
+.wrapper {
+  width: 100%;
+  height: 95vh;
+  margin: 30rpx 0;
+  overflow: hidden;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 28rpx;
+}
+ 
+.handWriting {
+  background: #fff;
+  width: 100%;
+  height: 500rpx;
+}
+ 
+.handRight {
+  display: inline-flex;
+  align-items: center;
+}
+ 
+.handCenter {
+  border: 4rpx dashed #e9e9e9;
+  flex: 5;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+ 
+.handTitle {
+  transform: rotate(90deg);
+  flex: 1;
+  color: #666;
+}
+ 
+.handBtn button {
+  font-size: 28rpx;
+}
+ 
+.handBtn {
+  height: 0rpx;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  flex: 1;
+}
+ 
+.delBtn {
+  position: absolute;
+  top: 250rpx;
+  left: 0rpx;
+  transform: rotate(90deg);
+  color: #666;
+}
+ 
+.delBtn image {
+  position: absolute;
+  top: 13rpx;
+  left: 25rpx;
+}
+ 
+.subBtn {
+  position: absolute;
+  bottom: 52rpx;
+  left: -3rpx;
+  display: inline-flex;
+  transform: rotate(90deg);
+  background: #008ef6;
+  color: #fff;
+  margin-bottom: 30rpx;
+  text-align: center;
+  justify-content: center;
+}
+ 
+.black-select {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 25rpx;
+}
+.black-select.color_select {
+  width: 90rpx;
+  height: 90rpx;
+  top: 30rpx;
+  left: 10rpx;
+}
+.red-select {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top:140rpx;
+  left:25rpx;
+}
+.red-select.color_select {
+  width: 90rpx;
+  height: 90rpx;
+  top: 120rpx;
+  left: 10rpx;
+}

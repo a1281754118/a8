@@ -1,0 +1,81 @@
+<view class="selectionlist">
+  <h1  style="float:left;display:inline-block;" >申请流程</h1> 
+  <image class="selectionlist-img1" src="../../img/youjiantou.png"></image>
+  
+  <picker class="picker" bindchange="bindPickerChange1" value="{{index}}" range="{{array1}}">
+    <text>{{text1}}</text>
+  </picker>
+</view>
+<view class="selectionlist">
+  <h1  style="float:left;display:inline-block;" >申请类型</h1> 
+  <image class="selectionlist-img1" src="../../img/youjiantou.png"></image>
+  
+  <picker class="picker" bindchange="bindPickerChange2" value="{{index}}" range="{{array2}}">
+    <text>{{text2}}</text>
+  </picker>
+</view>
+
+<view class="selectionlist">
+  开始日期
+  <image class="selectionlist-img2" src="../../img/shijian.png"></image>
+  <picker class="rollselection" mode="date" value="{{startdate}}"  bindchange="bindDateChange">
+    <view>{{startdate}}</view>
+  </picker>
+  <!-- <input placeholder="请输入开始日期"></input> -->
+</view>
+<view class="selectionlist" style="margin-top:0rpx;">
+  结束日期
+  <image class="selectionlist-img2" src="../../img/shijian.png"></image>
+  
+  <picker class="rollselection" mode="date" value="{{enddate}}"  bindchange="bindDateChangeEnd">
+    {{enddate}}
+  </picker>
+</view>
+
+<view class="selectionlist">
+   <text style="float: left;margin-right: 0rpx;color: rgb(85, 85, 85)">申请天数</text> 
+  
+  <input placeholder="请输入出差/休假天数" bindinput="chucha" value="{{text3}}"></input>
+  <image class="selectionlist-img2" src="../../img/rili.png"></image>
+</view>
+
+<view class="description-list">
+  <view>申请内容</view>
+  <textarea bindblur="bindTextAreaBlur" placeholder="请输入详细内容" bindinput="xiangxi" value="{{text4}}" />
+  <!-- <input placeholder="请输入详细内容"></input> -->
+</view>
+
+<view class="upimg">
+  <view class="weui-uploader">
+    <view class="img-v weui-uploader__bd" style="width: 100%;margin: 0 auto;">
+      <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this" 
+      style="float:left;width:23%;margin-top:10rpx;margin-left:10rpx;">
+        <image style="margin:0 auto;" class='weui-uploader__img ' 
+        src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+          <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+      </view>
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"
+       style="margin-top:10rpx;margin-left:10rpx"> </view>
+    </view>
+  </view>
+</view>
+
+<view class="selectionlist" data-id="1" bindtap="cclist">
+  <h1  style="float:left;display:inline-block;" >审批人</h1> 
+  <image class="selectionlist-img1" src="../../img/youjiantou.png"></image>
+  
+    <text style="margin-right:25rpx;">{{text5}}</text>
+
+</view>
+
+<view class="selectionlist" data-id="2" bindtap="cclist">
+  <h1  style="float:left;display:inline-block;" >抄送人</h1> 
+  <image class="selectionlist-img1" src="../../img/youjiantou.png"></image>
+  
+  
+    <text style="margin-right:25rpx;">{{text6}}</text>
+  
+</view>
+
+<button class="selectionlist-botton" bindtap="tijiao">提交</button>

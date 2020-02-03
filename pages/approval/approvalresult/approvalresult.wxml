@@ -1,0 +1,68 @@
+<view class="approvalresult-view">
+  <view class="approvalresult-view-1" bindtap="jieguo" >
+  <text>审批结果 :</text>
+  <view class="approvalresult-view-1-view1">{{approvalresult.stateName}}</view>
+  <image class="approvalresult-img" src="../../img/youjiantou.png"></image>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>审批流程 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.flowName}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>开始日期 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.applyDt}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>结束日期 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.endinDate}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>申请天数 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.days ? approvalresult.days:'-'}} 天</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>流程说明 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.flowDesc}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text style="margin-left:30rpx">申请人 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.userName}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text style="margin-left:30rpx">归档人 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.depname}}</text>
+  </view>
+  <view class="approvalresult-view-1">
+  <text>归档时间 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.startinDate}}</text>
+  </view>
+  <view class="approvalresult-view-1" >
+  <text style="margin-left:30rpx">抄送人 :</text>
+  <text class="approvalresult-view-1-text1">{{approvalresult.copyUserNames}}</text>
+  </view>
+  
+  
+
+
+
+</view>
+
+<view class="approvalresult-view2">
+<text>请假说明:</text>
+ <view class="approvalresult-view2-1">{{approvalresult.content}}</view>
+</view>
+
+<view class="upimg">
+  <view class="weui-uploader">
+    <view class="img-v weui-uploader__bd" style="width: 100%;margin: 0 auto;">
+      <view class='pic' wx:for="{{imgarr}}" wx:for-item="item" wx:key="*this" 
+      style="float:left;width:23%;margin-top:10rpx;margin-left:10rpx;">
+        <image style="margin:0 auto;" class='weui-uploader__img ' 
+        src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+          <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+      </view>
+      
+    </view>
+  </view>
+</view>

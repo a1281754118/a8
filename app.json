@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/timecard/timecard",
+    "pages/approval/approval",
+    "pages/approval/purchase-approval/purchase-approval",
+    "pages/approval/approvalresult/approvalresult",
+    "pages/approval/add-approval/add-approval",
+    "pages/approval/add-approval/CClist/CClist",
+    "pages/approval/purchase-approval/approvalresultlist/approvalresultlist",
+    "pages/approval/approval-lc/approval-lc",
+    "pages/inspection/inspection"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FC6505",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "mp-actionSheet": "./components/actionsheet/actionsheet"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

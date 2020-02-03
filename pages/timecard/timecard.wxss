@@ -1,0 +1,17 @@
+/* pages/timecard/timecard.wxss */
+.specificdate{
+  width: 200rpx;
+  height: 50rpx;
+  background: #fff;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50rpx;
+}
+.upposition{
+  border-top: 1rpx rgb(240, 240, 240) solid;
+  display: block;
+  width: 92%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 25rpx;
+}

@@ -1,0 +1,117 @@
+<view class="body">
+  <!-- logo布局 -->
+  <view style="background: linear-gradient(rgb(254,100,4), rgb(253,165,79));color:#fff;margin-bottom:15rpx">
+  <view class="index-logo">
+  <view>
+    <image src="../img/tadiao.png"></image>
+  </view>
+    <text>查看设备情况</text>
+  </view>
+   <!-- 设备数据 -->
+   <view class="index-middle">
+     <view>
+      开工项目
+      <text>( {{shebei.countRemoteRepair}} ) 台</text>
+     </view>
+     <view>
+     故障设备
+     <text>( {{shebei.countRepair}} ) 台</text>
+     </view>
+     <view style="border-right: 0rpx silver solid;">
+     代办项目
+     <text>( {{shebei.countToDo}} ) 台</text>
+     </view>
+     </view>
+     <!-- 闭合标签 -->
+     <view style="clear:both;"></view>
+  </view>
+  
+  <!-- 应用模块 -->
+  <view class="index-app">
+    <view class="index-app-mod" bindtap="timecard">
+    <view>
+    <image src="../img/kq.png"></image>
+    <text>日常考勤</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod" bindtap="inspection">
+    <view>
+    <image src="../img/anquanxunjian.png"></image>
+    <text>安全巡检</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod none-style">
+    <view>
+    <image src="../img/guzhangbaoxiu.png"></image>
+    <text>故障报修</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod">
+    <view>
+    <image src="../img/diaodu.png"></image>
+    <text>我要调度</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod">
+    <view>
+    <image src="../img/zhuangchewuliu.png"></image>
+    <text>装车物流</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod none-style">
+    <view>
+    <image src="../img/zhuangchewuliu.png"></image>
+    <text>物流牵收</text>
+    </view>
+    </view>
+    
+    <view class="index-app-mod">
+    <view>
+    <image src="../img/shigongjihua.png"></image>
+    <text>施工计划</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod">
+    <view>
+    <image src="../img/xianchanganzhuang.png"></image>
+    <text>现场安拆</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod none-style">
+    <view>
+    <image src="../img/xianchangchaixie.png"></image>
+    <text>现场拆卸</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod">
+    <view>
+    <image src="../img/erweimaguangli.png"></image>
+    <text>二维码管理</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod">
+    <view>
+    <image src="../img/zhinengdiaodu.png"></image>
+    <text>智能调度</text>
+    </view>
+    </view>
+
+    <view class="index-app-mod none-style" bindtap="approval">
+    <view>
+    <image src="../img/sp.png"></image>
+    <text>事物审批</text>
+    </view>
+    
+    </view>
+  </view>
+
+</view>
