@@ -1,0 +1,30 @@
+<!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+<view class="xunjian-list" bindtap="approvalresult" data-insid="{{item.insid}}">
+
+  <view class="xunjian-list-1">
+    <text class="xunjian-list-text1">134</text>
+    <text class="xunjian-list-text2">楼号：1</text>
+  </view>
+  <image class="xunjian-img" src="../../img/sp.png"></image>
+  <view class="xunjian-list-2">
+    <view class="xunjian-list-view1">
+      <view class="xunjian-list-view1-1">22222222
+        <view>2333</view>
+      </view>
+      <view class="xunjian-list-view1-1">编号：1212121</view>
+    </view>
+    <view class="xunjian-list-view2">巡检时间 : 2019121212</view>
+  </view>
+
+  <view class="xunjian-list-3">
+
+    <text class="communal-list-text4">{{item.stateName}}</text>
+  </view>
+</view>
+
+
+
+<view class="fixed-botton" bindtap="purchaseApproval">
+  <image src="../../img/cuowu1.png"></image>
+  清空列表
+</view>

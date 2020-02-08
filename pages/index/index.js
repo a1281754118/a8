@@ -43,6 +43,39 @@ Page({
     })
     wx.hideLoading()
   },
+  //故障报修
+  repair() {
+    wx.showLoading({
+      title: '加载中...',
+      mask: true
+    });
+    wx.navigateTo({
+      url: '../repair/repair'
+    })
+    wx.hideLoading()
+  },
+  //装车物流
+  loading(){
+    wx.showLoading({
+      title: '加载中...',
+      mask: true
+    });
+    wx.navigateTo({
+      url: '../loading/Loading'
+    })
+    wx.hideLoading()
+  },
+  //物流签收
+  signfor(){
+    wx.showLoading({
+      title: '加载中...',
+      mask: true
+    });
+    wx.navigateTo({
+      url: '../sign-for/sign-for'
+    })
+    wx.hideLoading()
+  },
   /**
    * 生命周期函数--监听页面加载
    */

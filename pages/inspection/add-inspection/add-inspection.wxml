@@ -1,0 +1,104 @@
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">代巡检单：</view>
+<input class="add-xunjian-input1" placeholder="请关联巡检单"></input>
+<view class="add-xunjian-view1-2">查询</view>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">项目名称：</view>
+<input class="add-xunjian-input2" placeholder="请输入项目名称"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">设备编号：</view>
+<input class="add-xunjian-input2" placeholder="请输入设备自编号"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">出厂编号：</view>
+<input class="add-xunjian-input2" placeholder="请输入设备自编号"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">备案编号：</view>
+<input class="add-xunjian-input1" placeholder="请输入备案编号"></input>
+<view class="add-xunjian-view1-2">查询</view>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">设备型号：</view>
+<input class="add-xunjian-input2" placeholder="请输入设备型号"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">设备来源：</view>
+<input class="add-xunjian-input2" placeholder="请输入设备来源"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">项目区域：</view>
+<input class="add-xunjian-input2" placeholder="请输入项目区域"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">楼号：</view>
+<input class="add-xunjian-input2" placeholder="请输入楼号"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">巡检时间：</view>
+<input class="add-xunjian-input2" value="2019/9/9"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">巡检内容：</view>
+请选择巡检内容
+<image class="add-xunjian-img" src="../../img/youjiantou.png"></image>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">巡检结果：</view>
+请选择巡检结果
+<image class="add-xunjian-img" src="../../img/youjiantou.png"></image>
+</view>
+<view class="add-xunjian" >
+<view class="add-xunjian-view1-1" style="color:red">是否整改：</view>
+<checkbox-group class="group" bindchange="checkboxChange">
+  <view class="label-1" wx:for="{{checkboxItems}}">
+    <label>
+      <checkbox hidden value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+      <view class="label-1__icon">
+        <view class="label-1__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+      </view>
+      <text class="label-1__text">{{item.value}}</text>
+    </label>
+  </view>
+</checkbox-group>
+</view>
+
+<view class="add-xunjian" style="height:200rpx;">内容描述：
+<input placeholder="请输入描述内容"></input>
+
+</view>
+<view class="add-xunjian">位置：</view>
+
+<view class="upimg">
+  <view class="weui-uploader">
+    <view class="img-v weui-uploader__bd" style="width: 100%;margin: 0 auto;">
+      <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this" 
+      style="float:left;width:23%;margin-top:10rpx;margin-left:10rpx;">
+        <image style="margin:0 auto;" class='weui-uploader__img ' 
+        src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+          <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+      </view>
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"
+       style="margin-top:10rpx;margin-left:10rpx"> </view>
+    </view>
+  </view>
+</view>
+
+<view class="add-xunjian" style="height:90rpx;"> 
+<view class="add-xunjian-anniu">立即上传</view>
+<view class="add-xunjian-anniu">保存本地</view>
+</view>

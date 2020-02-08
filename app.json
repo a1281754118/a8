@@ -10,7 +10,14 @@
     "pages/approval/add-approval/CClist/CClist",
     "pages/approval/purchase-approval/approvalresultlist/approvalresultlist",
     "pages/approval/approval-lc/approval-lc",
-    "pages/inspection/inspection"
+    "pages/inspection/inspection",
+    "pages/inspection/inspectiondetails/inspectiondetails",
+    "pages/inspection/Local-patrol/Local-patrol",
+    "pages/inspection/add-inspection/add-inspection",
+    "pages/repair/repair",
+    "pages/repair/add-repair/add-repair",
+    "pages/sign-for/sign-for",
+    "pages/loading/Loading"
   ],
   "permission": {
     "scope.userLocation": {

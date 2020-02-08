@@ -1,0 +1,88 @@
+
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">待发货</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">待结案</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">已结案</view>
+</view>
+ <view class=" search" style='margin-top: 90rpx;'>
+    <view style='margin-top: 10rpx;'>
+      <view class='searchItem'>
+        <image src='/pages/img/weibiaoti-.png' />
+        <input type='text' placeholder='发货人/出发地/目的地/运输车牌/金额' bindinput='input' value='{{adTitle}}' bindconfirm='search'></input>
+        <image style='display: {{display}}; height: 35rpx;width: 35rpx;' src='/pages/img/cuowu1.png' bindtap='delt'></image>
+      </view>
+    </view>
+
+  </view>
+
+<swiper current="{{currentTab}}" bindchange="swiperTab" style="height:100%;">
+
+  <swiper-item>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="chudi">
+    <view class='ycy' style="padding-top: 170rpx;">
+     <!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+      <view class="repir-view">
+      <view class="reqir-view-1">
+      <view class="reqir-view-1-1">发货日期:  <text >待处理</text> </view> 
+      <view class="reqir-view-1-1">发货人：  <text >xxxx</text></view>
+      </view>
+      <view class="reqir-view-1">
+      <view class="reqir-view-1-1">运输费:  <text> 58</text></view> 
+      <view class="reqir-view-1-1">运输单位： <text >xxxx</text></view>
+      </view>
+       <view class="reqir-view-1">目的地：  <text style="color:red">中国建设银行</text> </view>
+       <view class="reqir-view-1">运输车牌：  <text style="color: royalblue">h25</text> </view>
+       <view class="reqir-view-1">调度单号： <text >中国建设银行</text> </view>
+
+    </view>
+      
+    </view>
+    </scroll-view >
+  </swiper-item>
+
+  <swiper-item>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="chudi">
+    <view class='ycy' style="padding-top: 170rpx;">
+     <!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+       <view class="repir-view">
+      <view class="reqir-view-1">
+      <view class="reqir-view-1-1">发货日期:  <text >待处理</text> </view> 
+      <view class="reqir-view-1-1">发货人：  <text >xxxx</text></view>
+      </view>
+      <view class="reqir-view-1">
+      <view class="reqir-view-1-1">运输费:  <text> 58</text></view> 
+      <view class="reqir-view-1-1">运输单位： <text >xxxx</text></view>
+      </view>
+       <view class="reqir-view-1">目的地：  <text style="color:red">中国建设银行</text> </view>
+       <view class="reqir-view-1">运输车牌：  <text style="color: royalblue">h25</text> </view>
+       <view class="reqir-view-1">调度单号： <text >中国建设银行</text> </view>
+
+    </view>
+    </view>
+        </scroll-view >
+  </swiper-item>
+<swiper-item>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="chudi">
+    <view class='ycy' style="padding-top: 170rpx;">
+     <!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+       <view class="repir-view">
+      <view class="reqir-view-1">
+      <view class="reqir-view-1-1">发货日期:  <text >待处理</text> </view> 
+      <view class="reqir-view-1-1">发货人：  <text >xxxx</text></view>
+      </view>
+      <view class="reqir-view-1">
+      <view class="reqir-view-1-1">运输费:  <text> 58</text></view> 
+      <view class="reqir-view-1-1">运输单位： <text >xxxx</text></view>
+      </view>
+       <view class="reqir-view-1">目的地：  <text style="color:red">中国建设银行</text> </view>
+       <view class="reqir-view-1">运输车牌：  <text style="color: royalblue">h25</text> </view>
+       <view class="reqir-view-1">调度单号： <text >中国建设银行</text> </view>
+
+    </view>
+    </view>
+        </scroll-view >
+  </swiper-item>
+ 
+
+</swiper>
+

@@ -1,4 +1,4 @@
-// pages/inspection/inspection.js
+
 Page({
 
   /**
@@ -9,7 +9,7 @@ Page({
     showActionsheet: false,
     cookies: decodeURIComponent(wx.getStorageSync('cookies')), //解码cookie
     groups: [{
-      text: '本地巡检',
+      text: '我要报修',
       value: 1
     },
     {
@@ -61,11 +61,11 @@ Page({
     })
     this.load()
   },
-  load(){
-    
+  load() {
+
   },
   //跳转详情
-  inspectiondetails(e){
+  inspectiondetails(e) {
     console.log(e)
     wx.showLoading({
       title: '加载中...',
@@ -150,7 +150,7 @@ Page({
         mask: true
       });
       wx.navigateTo({
-        url: './add-inspection/add-inspection'
+        url: './add-repair/add-repair'
       })
       wx.hideLoading()
     } else if (e.detail.value == '1') {

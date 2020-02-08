@@ -54,7 +54,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 12,
 			"list": [
 				{
 					"id": -1,
@@ -109,6 +109,41 @@
 					"id": -1,
 					"name": "安全巡检",
 					"pathName": "pages/inspection/inspection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "巡检详情",
+					"pathName": "pages/inspection/inspectiondetails/inspectiondetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增巡检",
+					"pathName": "pages/inspection/add-inspection/add-inspection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "故障报修",
+					"pathName": "pages/repair/repair",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增报修",
+					"pathName": "pages/repair/add-repair/add-repair",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "物流签收",
+					"pathName": "pages/sign-for/sign-for",
 					"query": "",
 					"scene": null
 				}

@@ -1,0 +1,86 @@
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">状态：</view>
+待处理
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">备案编号</view>
+<input class="add-xunjian-input1" placeholder="请填写备案编号"></input>
+<view class="add-xunjian-view1-2">查询</view>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">出厂编号</view>
+<input class="add-xunjian-input2" placeholder="请输入出厂编号"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">项目名称：</view>
+<input class="add-xunjian-input1" placeholder="请输入项目名称"></input>
+<view class="add-xunjian-view1-2">查询</view>
+</view>
+
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">所在楼号：</view>
+<input class="add-xunjian-input2" placeholder="请输入楼号"></input>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">规格型号</view>
+<input class="add-xunjian-input2" placeholder="请输入规格型号"></input>
+</view>
+
+
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">当前状态</view>
+请选择当前状态
+<image class="add-xunjian-img" src="../../img/youjiantou.png"></image>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">申报人：</view>
+请选择巡检结果
+<image class="add-xunjian-img" src="../../img/youjiantou.png"></image>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">负责人：</view>
+请选择负责人
+<image class="add-xunjian-img" src="../../img/youjiantou.png"></image>
+</view>
+
+
+<view class="add-xunjian" style="height:200rpx;">内容描述：
+<input placeholder="请输入描述内容"></input>
+
+</view>
+
+
+<view class="upimg">
+  <view class="weui-uploader">
+    <view class="img-v weui-uploader__bd" style="width: 100%;margin: 0 auto;">
+      <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this" 
+      style="float:left;width:23%;margin-top:10rpx;margin-left:10rpx;">
+        <image style="margin:0 auto;" class='weui-uploader__img ' 
+        src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+          <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+      </view>
+      <view class="weui-uploader__input-box pic" bindtap="chooseImg"
+       style="margin-top:10rpx;margin-left:10rpx"> </view>
+    </view>
+  </view>
+</view>
+
+<view class="add-xunjian">
+<view class="add-xunjian-view1-1">报修时间：</view>
+<input class="add-xunjian-input2" value="2019/9/9"></input>
+</view>
+<view class="add-xunjian">报修位置：</view>
+
+
+<view class="add-xunjian" style="height:90rpx;"> 
+<view class="add-xunjian-anniu" style="width:100%;">上报提交</view>
+</view>

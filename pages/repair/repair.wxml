@@ -1,0 +1,92 @@
+
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">待处理</view>
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">派工中</view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">处理中</view>
+  <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">已完成</view>
+  <view class="swiper-tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="clickTab">结案</view>
+  
+</view>
+ <view class=" search" style='margin-top: 90rpx;'>
+    <view style='margin-top: 10rpx;'>
+      <view class='searchItem'>
+        <image src='/pages/img/weibiaoti-.png' />
+        <input type='text' placeholder='输入项目名称/出厂编号/楼号/整改' bindinput='input' value='{{adTitle}}' bindconfirm='search'></input>
+        <image style='display: {{display}}; height: 35rpx;width: 35rpx;' src='/pages/img/cuowu1.png' bindtap='delt'></image>
+      </view>
+    </view>
+
+  </view>
+
+<swiper current="{{currentTab}}" bindchange="swiperTab" style="height:100%;">
+
+  <swiper-item>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="chudi">
+    <view class='ycy' style="padding-top: 170rpx;">
+     <!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+    <view class="repir-view">
+      <view class="reqir-view-1">
+      <view class="reqir-view-1-1">状态:  <text style="color:red">待处理</text> </view> 
+      <view class="reqir-view-1-1">申报人： <text class="reqir-text">xxxx</text></view>
+      </view>
+      <view class="reqir-view-1">项目名称： <text class="reqir-text">中国建设银行</text> </view>
+      <view class="reqir-view-1">
+      <view class="reqir-view-1-1">所在楼号:  <text class="reqir-text"> 58</text></view> 
+      <view class="reqir-view-1-1">出厂编号： <text class="reqir-text">xxxx</text></view>
+      </view>
+       <view class="reqir-view-1">规格型号：  <text class="reqir-text">h25</text> </view>
+       <view class="reqir-view-1">备案编号：  <text class="reqir-text">中国建设银行</text> </view>
+       <view class="reqir-view-1">报修时间：  <text class="reqir-text">中国建设银行</text> </view>
+       <view class="reqir-view-1">报修位置：  <text class="reqir-text">中国建设银行</text> </view>
+    </view>
+      
+    </view>
+    </scroll-view >
+  </swiper-item>
+
+  <swiper-item>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="chudi">
+    <view class='ycy' style="padding-top: 170rpx;">
+     <!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+     2
+    </view>
+        </scroll-view >
+  </swiper-item>
+
+   <swiper-item>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="chudi">
+    <view class='ycy' style="padding-top: 170rpx;">
+     <!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+     3
+    </view>
+        </scroll-view >
+  </swiper-item>
+
+   <swiper-item>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="chudi">
+    <view class='ycy' style="padding-top: 170rpx;">
+     <!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+     4
+    </view>
+        </scroll-view >
+  </swiper-item>
+
+   <swiper-item>
+  <scroll-view scroll-y="true" style="height:100%" bindscrolltolower="chudi">
+    <view class='ycy' style="padding-top: 170rpx;">
+     <!-- <text wx:if="{{file==''}}" style="text-align: center;display:block;">---暂无结果---</text> -->
+     5
+    </view>
+        </scroll-view >
+  </swiper-item>
+
+ 
+
+</swiper>
+
+<view class="fixed-botton" bindtap="purchaseApproval">
+<image src="../img/baoxiu.png"></image>
+  我要报修
+</view>
+<mp-actionSheet bindactiontap="btnClick" show="{{showActionsheet}}" actions="{{groups}}" title="请选择功能">
+</mp-actionSheet>

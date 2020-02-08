@@ -1,6 +1,6 @@
 <block wx:if="{{opid=='2'}}">
   <view class=" search">
-    <view style='margin-top: 10rpx;'>
+    <view style='padding-top: 10rpx;'>
       <view class='searchItem'>
         <image src='/pages/img/weibiaoti-.png' />
         <input type='text' placeholder='输入用户名/所属部门' bindinput='input' value='{{adTitle}}' bindconfirm='search'></input>
@@ -27,7 +27,7 @@
 
 <block wx:if="{{opid=='1'}}">
   <view class=" search">
-    <view style='margin-top: 10rpx;'>
+    <view style='padding-top: 10rpx;'>
       <view class='searchItem'>
         <image src='/pages/img/weibiaoti-.png' />
         <input type='text' placeholder='输入用户名/所属部门' bindinput='input' value='{{adTitle}}' bindconfirm='search'></input>

@@ -43,7 +43,7 @@
     </view>
 
     <view class="index-app-mod none-style">
-    <view>
+    <view bindtap="repair">
     <image src="../img/guzhangbaoxiu.png"></image>
     <text>故障报修</text>
     </view>
@@ -56,14 +56,14 @@
     </view>
     </view>
 
-    <view class="index-app-mod">
+    <view class="index-app-mod" bindtap="loading">
     <view>
     <image src="../img/zhuangchewuliu.png"></image>
     <text>装车物流</text>
     </view>
     </view>
 
-    <view class="index-app-mod none-style">
+    <view class="index-app-mod none-style" bindtap="signfor">
     <view>
     <image src="../img/zhuangchewuliu.png"></image>
     <text>物流牵收</text>

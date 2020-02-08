@@ -1,4 +1,4 @@
-// pages/inspection/inspection.js
+
 Page({
 
   /**
@@ -8,15 +8,6 @@ Page({
     currentTab: 0,
     showActionsheet: false,
     cookies: decodeURIComponent(wx.getStorageSync('cookies')), //解码cookie
-    groups: [{
-      text: '本地巡检',
-      value: 1
-    },
-    {
-      text: '新增',
-      value: 2
-    }
-    ],
     file: [],//归档
     start: 0,//起始记录
     pageSize: 15, //获取记录数量
@@ -61,11 +52,11 @@ Page({
     })
     this.load()
   },
-  load(){
-    
+  load() {
+
   },
   //跳转详情
-  inspectiondetails(e){
+  inspectiondetails(e) {
     console.log(e)
     wx.showLoading({
       title: '加载中...',
@@ -140,31 +131,6 @@ Page({
       showActionsheet: true
     })
 
-  },
-  btnClick(e) {
-    console.log(e.detail.value)
-    //审批
-    if (e.detail.value == '2') {
-      wx.showLoading({
-        title: '加载中...',
-        mask: true
-      });
-      wx.navigateTo({
-        url: './add-inspection/add-inspection'
-      })
-      wx.hideLoading()
-    } else if (e.detail.value == '1') {
-      wx.showLoading({
-        title: '加载中...',
-        mask: true
-      });
-      wx.navigateTo({
-        url: './Local-patrol/Local-patrol'
-      })
-      wx.hideLoading()
-    }
-
-    this.close()
   },
   /**
    * 生命周期函数--监听页面加载

@@ -1,0 +1,35 @@
+<view class="xunjian-boss">
+  <view class="xunjian-view1">项目名称：123</view>
+  <view class="xunjian-view2">
+  <view class="xunjian-view2-1">项目描述:</view>
+  <view class="xunjian-view2-2">
+  <view>出场编号：11111</view>
+  <view>出场编号：11111</view>
+  <view>出场编号：11111</view>
+  </view>
+  </view>
+</view>
+
+<view class="xunjian-boss">巡检结果:不可用</view>
+
+<view class="xunjian-boss xunjian-view3">
+<view>巡检人员：xxxx</view>
+<view>地址：xxxx</view>
+<view>时间：xxxx</view>
+
+</view>
+
+<view class="upimg">
+  <view class="weui-uploader">
+    <view class="img-v weui-uploader__bd" style="width: 100%;margin: 0 auto;">
+      <view class='pic' wx:for="{{imgarr}}" wx:for-item="item" wx:key="*this" 
+      style="float:left;width:23%;margin-top:10rpx;margin-left:10rpx;">
+        <image style="margin:0 auto;" class='weui-uploader__img ' 
+        src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+          <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+      </view>
+      
+    </view>
+  </view>
+</view>
